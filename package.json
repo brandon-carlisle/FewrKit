@@ -1,0 +1,27 @@
+{
+  "name": "fewrkit",
+  "version": "1.0.0",
+  "description": "Front End Wed Resources Kit",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beanziii/FewrKit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beanziii/FewrKit/issues"
+  },
+  "homepage": "https://github.com/beanziii/FewrKit#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  },
+  "dependencies": {
+    "daisyui": "^2.17.0"
+  }
+}
