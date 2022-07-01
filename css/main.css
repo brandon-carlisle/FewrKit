@@ -2673,12 +2673,21 @@ html {
   margin-bottom: 0.75rem;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .top-3 {
@@ -2703,6 +2712,10 @@ html {
 
 .bottom-8 {
   bottom: 2rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .col-span-3 {
