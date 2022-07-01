@@ -2,11 +2,11 @@
   "name": "fewrkit",
   "version": "1.0.0",
   "description": "Front End Web Resources Kit",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch",
-    "minify": "tailwindcss -i ./input.css -o ./css/minify.css --minify",
-    "build": "tailwindcss -i ./input.css -o ./css/main.css"
+    "watch": "tailwindcss -i ./src/input.css -o ./src/main.css --watch",
+    "minify": "tailwindcss -i ./src/main.css -o ./dist/minify.css --minify",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "tailwindcss": "^3.1.4"
   },
   "dependencies": {
-    "daisyui": "^2.17.0"
+    "daisyui": "^2.17.0",
+    "parcel": "^2.6.2"
   }
 }
