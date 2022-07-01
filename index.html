@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="retro">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,5 +7,39 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>FewrKit</title>
   </head>
-  <body class="font-sans grid grid-cols-2"></body>
+  <body class="font-sans grid grid-cols-2 min-h-screen">
+    <aside id="sidebar" class="p-8 bg-base-200">
+      <a href="#" class="btn btn-block btn-outline text-2xl">FewrKit</a>
+    </aside>
+
+    <main id="main" class="p-8">
+      <!--  -->
+      <section id="html" class="flex flex-col gap-4 mb-8">
+        <div class="relative mockup-window bg-base-300">
+          <h2 class="absolute top-3 left-1/2 -translate-x-1/2 font-bold">
+            HTML
+          </h2>
+          <div class="flex flex-col justify-center px-4 py-4 gap-2 bg-base-200">
+            <!--  -->
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+              target="_blank"
+              class="w-full"
+            >
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">HTML5 Reference by MDN</h3>
+                  <p>You don't need to know every HTML element.</p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <!--  -->
+    </main>
+  </body>
 </html>
