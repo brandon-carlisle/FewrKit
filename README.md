@@ -1,2 +1,3 @@
 # FewrKit
-Front End Wed Resources Kit
+
+Front End Web Resources Kit
