@@ -7,12 +7,53 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>FewrKit</title>
   </head>
-  <body class="font-sans grid grid-cols-2 min-h-screen">
-    <aside id="sidebar" class="p-8 bg-base-200">
-      <a href="#" class="btn btn-block btn-outline text-2xl">FewrKit</a>
+  <body class="font-sans grid md:grid-cols-3">
+    <aside id="sidebar" class="p-8 bg-base-200 h-screen flex flex-col relative">
+      <a href="#" class="btn btn-block text-2xl mb-8">FewrKit</a>
+
+      <ul class="nav-list flex flex-col gap-10">
+        <li>
+          <a href="#" class="btn btn-block btn-primary btn-outline">HTML </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-block btn-secondary btn-outline">CSS </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-block btn-accent btn-outline"
+            >JavaScript
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-block btn-ghost btn-outline">Fonts </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-block btn-primary btn-outline">Colors </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-block btn-secondary btn-outline"
+            >Images & Videos
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-block btn-accent btn-outline">Icons </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-block btn-ghost btn-outline"
+            >Design Inspiration
+          </a>
+        </li>
+      </ul>
+
+      <a
+        href="https://github.com/beanziii"
+        class="btn btn-ghost absolute bottom-8 left-1/2 -translate-x-1/2"
+        target="_blank"
+      >
+        <ion-icon name="logo-github" size="large"></ion-icon>
+      </a>
     </aside>
 
-    <main id="main" class="p-8">
+    <main id="main" class="p-8 md:col-span-2">
       <!--  -->
       <section id="html" class="flex flex-col gap-4 mb-8">
         <div class="relative mockup-window bg-base-300">
@@ -41,5 +82,15 @@
       </section>
       <!--  -->
     </main>
+
+    <!--  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
