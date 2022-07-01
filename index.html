@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="lofi">
+<html lang="en" data-theme="lofi" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,37 +10,41 @@
   <body class="font-sans grid md:grid-cols-3 relative">
     <aside
       id="sidebar"
-      class="p-8 bg-base-200 md:h-screen flex flex-col relative md:sticky top-0"
+      class="p-8 bg-base-200 md:h-screen flex flex-col relative md:sticky md:top-0"
     >
       <a href="#" class="text-2xl mb-8 border-primary font-bold">FewrKit</a>
 
       <ul class="nav-list flex flex-col gap-10">
         <li>
-          <a href="#" class="btn btn-block btn-primary btn-outline">HTML</a>
+          <a href="#html" class="btn btn-block btn-primary btn-outline">HTML</a>
         </li>
         <li>
-          <a href="#" class="btn btn-block btn-secondary btn-outline">CSS</a>
+          <a href="#css" class="btn btn-block btn-secondary btn-outline">CSS</a>
         </li>
         <li>
-          <a href="#" class="btn btn-block btn-accent btn-outline"
+          <a href="#javascript" class="btn btn-block btn-accent btn-outline"
             >JavaScript
           </a>
         </li>
         <li>
-          <a href="#" class="btn btn-block btn-ghost btn-outline"
+          <a href="#fonts" class="btn btn-block btn-ghost btn-outline"
             >Fonts & Typography</a
           >
         </li>
         <li>
-          <a href="#" class="btn btn-block btn-primary btn-outline">Colors</a>
+          <a href="#colors" class="btn btn-block btn-primary btn-outline"
+            >Colors</a
+          >
         </li>
         <li>
-          <a href="#" class="btn btn-block btn-secondary btn-outline"
+          <a href="#images" class="btn btn-block btn-secondary btn-outline"
             >Images & Videos
           </a>
         </li>
         <li>
-          <a href="#" class="btn btn-block btn-accent btn-outline">Icons</a>
+          <a href="#icons" class="btn btn-block btn-accent btn-outline"
+            >Icons</a
+          >
         </li>
         <li>
           <a href="#" class="btn btn-block btn-ghost btn-outline"
@@ -60,7 +64,7 @@
 
     <main id="main" class="p-8 md:col-span-2">
       <!--  -->
-      <section id="html" class="flex flex-col gap-4 mb-8">
+      <section id="html" class="flex flex-col gap-4">
         <div class="relative mockup-window bg-base-300">
           <h2 class="absolute top-3 left-1/2 -translate-x-1/2 font-bold">
             HTML
@@ -104,9 +108,10 @@
           </div>
         </div>
       </section>
+      <div class="divider"></div>
       <!--  -->
       <!--  -->
-      <section id="css" class="flex flex-col gap-4 mb-8">
+      <section id="css" class="flex flex-col gap-4">
         <div class="relative mockup-window bg-base-300">
           <h2 class="absolute top-3 left-1/2 -translate-x-1/2 font-bold">
             CSS
@@ -180,9 +185,10 @@
           </div>
         </div>
       </section>
+      <div class="divider"></div>
       <!--  -->
       <!--  -->
-      <section id="javascript" class="flex flex-col gap-4 mb-8">
+      <section id="javascript" class="flex flex-col gap-4">
         <div class="relative mockup-window bg-base-300">
           <h2 class="absolute top-3 left-1/2 -translate-x-1/2 font-bold">
             JavaScript
@@ -266,9 +272,11 @@
           </div>
         </div>
       </section>
+      <div class="divider"></div>
+
       <!--  -->
       <!--  -->
-      <section id="fonts" class="flex flex-col gap-4 mb-8">
+      <section id="fonts" class="flex flex-col gap-4">
         <div class="relative mockup-window bg-base-300">
           <h2 class="absolute top-3 left-1/2 -translate-x-1/2 font-bold">
             Fonts & Typography
@@ -306,6 +314,273 @@
           </div>
         </div>
       </section>
+      <!--  -->
+      <div class="divider"></div>
+      <!--  -->
+      <section id="colors" class="flex flex-col gap-4">
+        <div class="relative mockup-window bg-base-300">
+          <h2 class="absolute top-3 left-1/2 -translate-x-1/2 font-bold">
+            Colors
+          </h2>
+          <div class="flex flex-col justify-center px-4 py-4 gap-2 bg-base-200">
+            <!--  -->
+            <a
+              href="https://yeun.github.io/open-color/"
+              target="_blank"
+              class="w-full"
+            >
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Open Color</h3>
+                  <p>An open-source color scheme, optimized for UI.</p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a
+              href="https://tailwindcss.com/docs/customizing-colors"
+              target="_blank"
+              class="w-full"
+            >
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Tailwind Colors</h3>
+                  <p>
+                    Another excellent and popular set of color pallettes. Great
+                    selection of colors for all your projects.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a href="https://flatuicolors.com/" target="_blank" class="w-full">
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Flat UI Colors</h3>
+                  <p>
+                    A good starting point for choosing a flat design color for
+                    your next project.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a
+              href="https://www.materialpalette.com/"
+              target="_blank"
+              class="w-full"
+            >
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Material Palette</h3>
+                  <p>
+                    Yet another set of colors, inspired in material design.
+                    Generate and download your palette.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a href="https://uigradients.com/" target="_blank" class="w-full">
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">UI Gradients</h3>
+                  <p>
+                    Collection of beautiful color gradients for you to choose
+                    from and export to your project.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a
+              href="https://maketintsandshades.com/"
+              target="_blank"
+              class="w-full"
+            >
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Tint and Shade Generator</h3>
+                  <p>
+                    Easily create lighter and darker versions of any base color.
+                    Perfect for hovers, borders and gradients.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a
+              href="https://coolors.co/contrast-checker"
+              target="_blank"
+              class="w-full"
+            >
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Coolors Contrast Checker</h3>
+                  <p>
+                    Tool to check whether two colors have a good contrast ratio.
+                    Essential for building accessible websites!
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a
+              href="https://www.css-gradient.com/"
+              target="_blank"
+              class="w-full"
+            >
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">CSS Gradient Generator</h3>
+                  <p>Generate beautiful color gradients.</p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <div class="divider"></div>
+      <!--  -->
+      <section id="images" class="flex flex-col gap-4">
+        <div class="relative mockup-window bg-base-300">
+          <h2 class="absolute top-3 left-1/2 -translate-x-1/2 font-bold">
+            Images & Video
+          </h2>
+          <div class="flex flex-col justify-center px-4 py-4 gap-2 bg-base-200">
+            <!--  -->
+            <a href="https://unsplash.com/" target="_blank" class="w-full">
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Unsplash</h3>
+                  <p>
+                    My #1 resource for free high-resolution photos. There are
+                    more photos here than you can imagine!
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a href="https://www.pexels.com/" target="_blank" class="w-full">
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Pexels</h3>
+                  <p>
+                    Another great resource for free stock photos and videos,
+                    created by photographers around the world.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a href="https://coverr.co/" target="_blank" class="w-full">
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Coverr</h3>
+                  <p>
+                    Best resource for beautiful and free videos about every
+                    imaginable topic, easily searchable.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <div class="divider"></div>
+      <!--  -->
+      <!--  -->
+      <section id="icons" class="flex flex-col gap-4">
+        <div class="relative mockup-window bg-base-300">
+          <h2 class="absolute top-3 left-1/2 -translate-x-1/2 font-bold">
+            Icons
+          </h2>
+          <div class="flex flex-col justify-center px-4 py-4 gap-2 bg-base-200">
+            <!--  -->
+            <a href="https://ionic.io/ionicons" target="_blank" class="w-full">
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Ionicons</h3>
+                  <p>
+                    A beautiful and round icon set, very easy to use, and 100%
+                    free even for commercial usage.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a href="https://heroicons.com/" target="_blank" class="w-full">
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Hero Icons</h3>
+                  <p>
+                    A 230-pieces icon set, available in outline and solid
+                    styles, best used at 24x24 px.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a href="https://phosphoricons.com/" target="_blank" class="w-full">
+              <div
+                class="card w-full bg-base-100 hover:bg-base-300 transition-all shadow-xl"
+              >
+                <div class="card-body">
+                  <h3 class="card-title">Phosphor Icons</h3>
+                  <p>
+                    Another beautiful, more boxy SVG icon set. Customizable
+                    thickness and color.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <!--  -->
+
       <!--  -->
     </main>
 
