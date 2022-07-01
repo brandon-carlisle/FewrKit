@@ -37,7 +37,7 @@
 60C:\Users\brandon\Documents\dev\FewrKit\node_modules\get-port133011865267517691 1
 80C:\Users\brandon\Documents\dev\FewrKit\node_modules\@parcel\optimizer-terser\src133011865267317511 1
 85C:\Users\brandon\Documents\dev\FewrKit\node_modules\csso\lib\replace\property\font.js133011865252303856 0
-43C:\Users\brandon\Documents\dev\FewrKit\dist133011876826273165 1
+43C:\Users\brandon\Documents\dev\FewrKit\dist133011899430540850 1
 73C:\Users\brandon\Documents\dev\FewrKit\node_modules\postcss\lib\result.js133010898540716178 0
 83C:\Users\brandon\Documents\dev\FewrKit\node_modules\tailwindcss\lib\util\bigSign.js133010898540586055 0
 69C:\Users\brandon\Documents\dev\FewrKit\node_modules\nth-check\LICENSE133011865244436697 0
@@ -63,7 +63,7 @@
 52C:\Users\brandon\Documents\dev\FewrKit\src\input.css133010899642740582 0
 83C:\Users\brandon\Documents\dev\FewrKit\node_modules\caniuse-lite\data\regions\UY.js133010902346984695 0
 66C:\Users\brandon\Documents\dev\FewrKit\node_modules\ordered-binary133011865250742428 1
-53C:\Users\brandon\Documents\dev\FewrKit\src\index.html133011876777503443 0
+53C:\Users\brandon\Documents\dev\FewrKit\src\index.html133011899149501372 0
 81C:\Users\brandon\Documents\dev\FewrKit\node_modules\v8-compile-cache\package.json133011865267377556 0
 67C:\Users\brandon\Documents\dev\FewrKit\node_modules\detect-libc\bin133011865250422139 1
 57C:\Users\brandon\Documents\dev\FewrKit\tailwind.config.js133011871553235197 0
@@ -4726,7 +4726,7 @@
 100C:\Users\brandon\Documents\dev\FewrKit\node_modules\@parcel\transformer-babel\src\babelErrorUtils.js133011865266967194 0
 101C:\Users\brandon\Documents\dev\FewrKit\node_modules\@parcel\transformer-babel\src\BabelTransformer.js133011865266987202 0
 91C:\Users\brandon\Documents\dev\FewrKit\node_modules\@parcel\transformer-babel\src\config.js133011865267117328 0
-54C:\Users\brandon\Documents\dev\FewrKit\dist\index.html133011876826273165 0
+54C:\Users\brandon\Documents\dev\FewrKit\dist\index.html133011899430530845 0
 102C:\Users\brandon\Documents\dev\FewrKit\node_modules\@parcel\transformer-babel\src\remapAstLocations.js133011865267177382 0
 99C:\Users\brandon\Documents\dev\FewrKit\node_modules\@parcel\core\lib\requests\WriteBundleRequest.js133011865276335712 0
 91C:\Users\brandon\Documents\dev\FewrKit\node_modules\@parcel\transformer-babel\lib\babel7.js133011865266907129 0
