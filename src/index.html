@@ -13,10 +13,10 @@
     <link rel="icon" type="image/png" href="/src/favicon.png" />
     <title>FewrKit</title>
   </head>
-  <body class="font-sans grid md:grid-cols-3 relative">
+  <body class="font-sans grid md:grid-cols-3 lg:grid-cols-4 relative">
     <aside
       id="sidebar"
-      class="p-8 bg-base-200 md:h-screen flex flex-col relative md:sticky md:top-0"
+      class="p-8 bg-base-200 md:max-h-screen flex flex-col relative md:sticky md:top-0 overflow-auto"
     >
       <a href="#" class="text-3xl mb-8 border-primary font-bold">FewrKit</a>
 
@@ -58,26 +58,36 @@
           </a>
         </li>
 
-        <div class="btn-group">
+        <li class="btn-group">
           <button class="btn btn-sm btn-outline w-1/2" data-set-theme="light">
             <ion-icon name="sunny-outline"></ion-icon>
           </button>
           <button class="btn btn-sm btn-outline w-1/2" data-set-theme="dark">
             <ion-icon name="moon-outline"></ion-icon>
           </button>
-        </div>
+        </li>
+
+        <li class="flex justify-center">
+          <a
+            href="https://github.com/beanziii"
+            class="btn btn-ghost"
+            target="_blank"
+          >
+            <ion-icon name="logo-github" size="large"></ion-icon>
+          </a>
+        </li>
       </ul>
 
-      <a
+      <!-- <a
         href="https://github.com/beanziii"
         class="btn btn-ghost absolute top-0 right-0 -translate-x-1/2 translate-y-1/2 md:bottom-8 md:top-auto md:left-1/2 md:-translate-x-1/2 md:translate-y-0"
         target="_blank"
       >
         <ion-icon name="logo-github" size="large"></ion-icon>
-      </a>
+      </a> -->
     </aside>
 
-    <main id="main" class="p-2 md:p-8 md:col-span-2">
+    <main id="main" class="p-2 md:p-8 md:col-span-2 lg:col-span-3">
       <!--  -->
       <section id="html" class="flex flex-col gap-4">
         <div class="relative mockup-window bg-base-300">

@@ -2660,6 +2660,14 @@ html {
   display: grid;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -2696,6 +2704,10 @@ html {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .scroll-smooth {
@@ -2742,6 +2754,14 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-sans {
@@ -2805,12 +2825,24 @@ html {
     left: 50%;
   }
 
+  .md\:top-2 {
+    top: 0.5rem;
+  }
+
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
 
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:max-h-screen {
+    max-height: 100vh;
   }
 
   .md\:-translate-x-1\/2 {
@@ -2827,6 +2859,14 @@ html {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:overflow-auto {
+    overflow: auto;
+  }
+
   .md\:p-8 {
     padding: 2rem;
   }
@@ -2834,5 +2874,15 @@ html {
   .md\:subpixel-antialiased {
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
