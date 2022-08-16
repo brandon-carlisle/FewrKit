@@ -13,7 +13,7 @@ A collection of my favourite tools I use for web dev.
 
 ## Tech Stack
 
-**Client:** HTML, DaisyUI, TailwindCSS
+**Built with:** HTML, DaisyUI, TailwindCSS
 
 **Deployed via:** Netlify / GitHub
 
