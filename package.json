@@ -1,29 +1,15 @@
 {
-  "name": "fewrkit",
-  "version": "1.0.0",
-  "description": "Front End Web Resources Kit",
-  "source": "src/index.html",
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "watch": "tailwindcss -i ./src/input.css -o ./src/main.css --watch",
-    "minify": "tailwindcss -i ./src/main.css -o ./dist/minify.css --minify",
-    "build": "parcel build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/beanziii/FewrKit.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/beanziii/FewrKit/issues"
-  },
-  "homepage": "https://github.com/beanziii/FewrKit#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.1.4"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "daisyui": "^2.17.0",
-    "parcel": "^2.6.2"
+    "astro": "^2.0.18"
   }
 }
