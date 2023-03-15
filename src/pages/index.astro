@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import { getCollection } from 'astro:content';
+const resources = await getCollection('resources');
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="mx-auto p-2">
+    <h1 class="mb-16 mt-8 text-center text-5xl font-semibold text-gray-800">
+      Frontend Web Resources
+    </h1>
+
+    <div
+      class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+    >
+      {
+        resources.map((resource) => (
+          <Card
+            href={resource.data.href}
+            title={resource.data.title}
+            body={resource.body}
+          />
+        ))
+      }
+    </div>
+  </main>
+</Layout>
