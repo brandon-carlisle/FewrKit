@@ -10,10 +10,11 @@ const { href, title, body } = Astro.props;
 
 <a
   href={href}
-  class="flex flex-col gap-2 rounded-lg bg-gradient-to-br from-blue-300 to-emerald-200 p-1 shadow-sm transition-all hover:shadow-md"
+  target="_blank"
+  class="rounded-lg bg-gradient-to-br from-blue-300 to-emerald-200 p-[2px] shadow-sm transition-all hover:shadow-md"
 >
-  <div class="h-full rounded-lg bg-white p-4">
-    <h2>
+  <div class="flex h-full flex-col gap-2 rounded-lg bg-white p-4">
+    <h2 class="font-semibold">
       {title}
       <span>&rarr;</span>
     </h2>
