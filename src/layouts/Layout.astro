@@ -15,7 +15,23 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-gray-100">
+  <body>
     <slot />
   </body>
 </html>
+
+<style>
+  body {
+    background-color: rgb(209, 250, 229);
+    background-image: radial-gradient(
+        at 87% 26%,
+        rgb(79, 70, 229) 0,
+        transparent 83%
+      ),
+      radial-gradient(at 49% 77%, rgb(5, 150, 105) 0, transparent 48%),
+      radial-gradient(at 80% 20%, rgb(6, 78, 59) 0, transparent 79%),
+      radial-gradient(at 78% 43%, rgb(162, 28, 175) 0, transparent 33%),
+      radial-gradient(at 12% 33%, rgb(75, 85, 99) 0, transparent 99%),
+      radial-gradient(at 95% 83%, rgb(127, 29, 29) 0, transparent 31%);
+  }
+</style>

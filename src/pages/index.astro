@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import { getCollection } from 'astro:content';
+const resources = await getCollection('resources');
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,96 +14,15 @@ import Card from '../components/Card.astro';
     <div
       class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     >
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docstro works and explore the official API docstro works and explore the official API docstro works and explore the official API docs."
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Loremframeworks and libraries. Lorem"
-      />
-      <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. azing Discord community. azing Discord community. azing Discord community. azing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazinazing Discord community. azing Discord community. azing Discord community. azing Discord community. azing Discord community. azing Discord community. azing Discord community. azing Discord community. azing Discord community. azing Discord community. azing Discord community. azing Discord community. mmunity. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
+      {
+        resources.map((resource) => (
+          <Card
+            href={resource.data.href}
+            title={resource.data.title}
+            body={resource.body}
+          />
+        ))
+      }
     </div>
   </main>
 </Layout>
