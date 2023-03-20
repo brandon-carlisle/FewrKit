@@ -11,12 +11,15 @@ const { href, title, body } = Astro.props;
 <a
   href={href}
   target="_blank"
-  class="rounded-lg bg-gradient-to-br from-blue-300 to-emerald-200 p-[2px] shadow-sm transition-all hover:shadow-md"
+  class="group rounded-lg bg-gradient-to-br from-blue-300 to-emerald-200 p-[2.4px] shadow-md shadow-teal-300/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-400/50"
 >
   <div class="flex h-full flex-col gap-2 rounded-lg bg-white p-4">
     <h2 class="font-semibold">
       {title}
-      <span>&rarr;</span>
+      <span
+        class="inline-block transition-all duration-200 group-hover:translate-x-1"
+        >&rarr;</span
+      >
     </h2>
     <p>
       {body}
