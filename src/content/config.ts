@@ -9,6 +9,7 @@ const TAGS = [
   'reading',
   'tool',
   'git',
+  'react',
 ] as const;
 
 const resourceCollection = defineCollection({
