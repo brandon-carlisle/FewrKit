@@ -1,6 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 
-export const TAGS = [
+const TAGS = [
   'html',
   'css',
   'javascript',
