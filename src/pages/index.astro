@@ -1,13 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+
 import { getCollection } from 'astro:content';
 const resources = await getCollection('resources');
 ---
 
 <Layout title="FewrKit - Frontend Web Resources Kit">
   <main class="mx-auto p-2">
-    <header class="mb-16 mt-8 text-center">
+    <header class="mb-12 mt-8 text-center">
       <h1 class="mb-4 font-mono text-5xl font-semibold text-gray-900">
         Frontend Web Resources Kit
       </h1>

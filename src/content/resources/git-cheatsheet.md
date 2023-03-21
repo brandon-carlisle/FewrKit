@@ -1,7 +1,7 @@
 ---
 title: Git Cheat Sheet
 href: http://git-cheatsheet.com/
-tags: ['tool']
+tags: ['git']
 ---
 
 A list of git commands.

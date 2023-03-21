@@ -1,6 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 
-const TAGS = [
+export const TAGS = [
   'html',
   'css',
   'javascript',
@@ -8,6 +8,7 @@ const TAGS = [
   'design',
   'reading',
   'tool',
+  'git',
 ] as const;
 
 const resourceCollection = defineCollection({

@@ -1,4 +1,6 @@
 ---
+import Tag from './Tag.astro';
+
 import type { CollectionEntry } from 'astro:content';
 
 export interface Props {
@@ -25,11 +27,7 @@ const { resource } = Astro.props;
       {resource.body}
     </p>
     <ul class="flex gap-1">
-      {
-        resource.data.tags.map((tag) => (
-          <li class="rounded-lg border-2 border-slate-200 py-1 px-2">{tag}</li>
-        ))
-      }
+      {resource.data.tags.map((tag) => <Tag tag={tag} />)}
     </ul>
   </div>
 </a>
