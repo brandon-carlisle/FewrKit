@@ -24,15 +24,7 @@ const resources = await getCollection('resources');
     <div
       class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     >
-      {
-        resources.map((resource) => (
-          <Card
-            href={resource.data.href}
-            title={resource.data.title}
-            body={resource.body}
-          />
-        ))
-      }
+      {resources.map((resource) => <Card resource={resource} />)}
     </div>
   </main>
 </Layout>

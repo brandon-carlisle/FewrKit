@@ -1,28 +1,35 @@
 ---
+import type { CollectionEntry } from 'astro:content';
+
 export interface Props {
-  title: string;
-  body: string;
-  href: string;
+  resource: CollectionEntry<'resources'>;
 }
 
-const { href, title, body } = Astro.props;
+const { resource } = Astro.props;
 ---
 
 <a
-  href={href}
+  href={resource.data.href}
   target="_blank"
   class="group rounded-lg bg-gradient-to-br from-blue-300 to-emerald-200 p-[2.4px] shadow-md shadow-teal-300/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-400/50"
 >
   <div class="flex h-full flex-col gap-2 rounded-lg bg-white p-4">
     <h2 class="font-semibold">
-      {title}
+      {resource.data.title}
       <span
         class="inline-block transition-all duration-200 group-hover:translate-x-1"
         >&rarr;</span
       >
     </h2>
-    <p>
-      {body}
+    <p class="mb-3">
+      {resource.body}
     </p>
+    <ul class="flex gap-1">
+      {
+        resource.data.tags.map((tag) => (
+          <li class="rounded-lg border-2 border-slate-200 py-1 px-2">{tag}</li>
+        ))
+      }
+    </ul>
   </div>
 </a>
